@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
-    
+    //fetch the ID
     private Switch mySwitch;
 
     @Override
