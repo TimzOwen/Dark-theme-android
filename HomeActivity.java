@@ -10,7 +10,14 @@ public class MainActivity extends AppCompatActivity {
     private Switch mySwitch;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) 
+    {
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
+        {
+            //set the dark mode
+            setTheme(R.style.darkMode);
+        }
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
