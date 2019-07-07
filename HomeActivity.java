@@ -49,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
     
     public void restartApp()
     {
-        
+        //refresh app for changes
+        Intent i = new Intent(this.SettingsActivity, Home.class);
+        i.startActivity();
+        i.finish();
     }
     }
 
