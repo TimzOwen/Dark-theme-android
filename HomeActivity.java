@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
     {
         //refresh app for changes
         Intent i = new Intent(this.SettingsActivity, Home.class);
-        i.startActivity();
-        i.finish();
+        startActivity(i);
+        finish();
     }
     }
 
