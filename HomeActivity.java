@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
              mySwitch = (Switch) findViewById(R.id.switchMode);
+        
+        //switch to get the exact getApplication context and edit thee necessary partds
 
         if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
         {
